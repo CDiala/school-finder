@@ -1,17 +1,59 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 1.6rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* hind-vadodara-regular - latin */
+/* hind-vadodara-300 - latin */
+@font-face {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/hind-vadodara-v12-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/hind-vadodara-v12-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/hind-vadodara-v12-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/hind-vadodara-v12-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/hind-vadodara-v12-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/hind-vadodara-v12-latin-300.svg#HindVadodara") format("svg"); /* Legacy iOS */
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+/* hind-vadodara-regular - latin */
+@font-face {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/hind-vadodara-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/hind-vadodara-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/hind-vadodara-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/hind-vadodara-v12-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/hind-vadodara-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/hind-vadodara-v12-latin-regular.svg#HindVadodara")
+      format("svg"); /* Legacy iOS */
+}
+/* hind-vadodara-500 - latin */
+@font-face {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/hind-vadodara-v12-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/hind-vadodara-v12-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/hind-vadodara-v12-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/hind-vadodara-v12-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/hind-vadodara-v12-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/hind-vadodara-v12-latin-500.svg#HindVadodara") format("svg"); /* Legacy iOS */
+}
 
 /* Color Palette */
 :root {
