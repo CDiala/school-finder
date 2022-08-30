@@ -1,0 +1,7 @@
+.social-media.nav-links {
+  justify-content: flex-start;
+}
+
+.social-media.nav-links a {
+  display: flex;
+}

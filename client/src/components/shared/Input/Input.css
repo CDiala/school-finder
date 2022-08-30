@@ -1,0 +1,21 @@
+.input-group {
+  align-items: center;
+  display: flex;
+}
+
+.input-group input {
+  color: var(--color-main);
+  flex: 1;
+  line-height: 1.6rem;
+  outline: none;
+  padding: 10px 20px;
+  width: 307px;
+}
+
+.input-group button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 40px;
+}
