@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Header from "./components/shared/Header/Header";
-import { objLinkItems } from "./data/objLinks";
-import logo from "./images/logo.svg";
-import Footer from "./components/shared/Footer/Footer";
+import graduation from "./images/graduation.png";
+import SideCard from "./components/shared/SideCard/SideCard";
 
 function App() {
   return (
     <>
       <Router>
-        <Header itemsArray={objLinkItems} logo={logo} />
-        <Footer itemsArray={objLinkItems} />
+        <SideCard
+          path={"/"}
+          src={graduation}
+          alt={"template"}
+          caption={"discover the best school around. ti will vlo drt dsfsgf"}
+        />
       </Router>
     </>
   );
