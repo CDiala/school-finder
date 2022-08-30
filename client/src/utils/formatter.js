@@ -1,3 +1,3 @@
-export const trimString = (str) => {
-  return str.length > 30 ? String(str).substring(0, 31) + "..." : str;
+export const trimString = (str, num) => {
+  return str.length > num ? String(str).substring(0, num + 1) + "..." : str;
 };

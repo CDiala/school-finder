@@ -1,0 +1,48 @@
+.sch-figure {
+  background-color: var(--color-plain);
+  border-radius: 8px;
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.08);
+  /* display: flex;
+  flex-wrap: wrap;
+  margin: 0; */
+  max-width: 397px;
+  padding: 24px;
+}
+
+.sch-figure:nth-of-type(2) {
+  justify-self: center;
+}
+
+.sch-figure:nth-of-type(3) {
+  justify-self: end;
+}
+
+.sch-figure * {
+  color: var(--color-card-main);
+  /* flex-direction: column; */
+}
+
+.sch-figure:hover .sch-image {
+  transform: scale(1.02);
+}
+
+.sch-caption {
+  /* margin-top: 16px; */
+  /* margin-bottom: 5px; */
+  margin-top: 0;
+}
+
+.sch-img-box {
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.sch-image {
+  border-radius: 10px;
+  width: 100%;
+  /* margin-bottom: 7px; */
+  max-height: 232px;
+  /* object-fit: cover; */
+}
