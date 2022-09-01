@@ -1,29 +1,19 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import loc_2 from "./images/loc_2.png";
 import graduation from "./images/graduation.png";
-import SideCard from "./components/shared/SideCard/SideCard";
-import ScholarshipCard from "./components/shared/ScholarshipCard/ScholarshipCard";
-import { trimString } from "./utils/formatter";
+import ExtraLargeCard from "./components/shared/ExtraLargeCard/ExtraLargeCard";
 
 function App() {
   return (
     <>
       <Router>
-        {/* <SideCard
-          path={"/"}
+        <ExtraLargeCard
           src={graduation}
           alt={"template"}
-          caption={"discover the best school around. ti will vlo drt dsfsgf"}
-        /> */}
-        <ScholarshipCard
-          src={loc_2}
-          alt={"scholarship template"}
-          text={trimString(
-            "find the cheapest scover the quick brown fox jumps over the lazy dog the best school around. t school around",
-            50
-          )}
-          path={"./"}
+          header="hello header"
+          body={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+          et, omnis atque rerum vel alias harum. Atque maiores temporibus facere
+          consequuntur perferendis eos, quod quia hic, harum ipsum unde iste.`}
         />
       </Router>
     </>

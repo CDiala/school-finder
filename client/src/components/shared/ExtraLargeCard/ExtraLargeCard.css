@@ -1,0 +1,30 @@
+.xl-card-container {
+  border-radius: 10px;
+  border: 1px solid #b0b0b0;
+  column-gap: 24px;
+  display: flex;
+  max-width: 884px;
+  padding: 24px;
+}
+
+.xl-card-container:hover .xl-card-img {
+  transform: scale(1.02);
+}
+
+.xl-card-img-box {
+  border-radius: 10px;
+  display: flex;
+  max-width: fit-content;
+  min-width: fit-content;
+  overflow: hidden;
+}
+
+.xl-card-img {
+  max-height: 184px;
+  transition: all 0.26s ease-in-out;
+  width: 186px;
+}
+
+.xl-card-header {
+  margin-bottom: 16px;
+}
