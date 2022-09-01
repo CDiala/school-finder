@@ -1,0 +1,10 @@
+.bookmark-container {
+  align-items: center;
+  background-color: #eeefee;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
