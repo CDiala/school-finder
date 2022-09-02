@@ -5,9 +5,9 @@ const TestimonialCard = (props) => {
   return (
     <>
       <div className="testimonial-container">
-        <div>
-          <p className="testimony">{testimony}</p>
-        </div>
+        {/* <div> */}
+        <p className="testimony">{testimony}</p>
+        {/* </div> */}
         <div className="testimonial-card-bottom">
           <div className="tst-crd">
             <p className="testimony-name">{names}</p>
