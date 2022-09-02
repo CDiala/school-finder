@@ -28,6 +28,10 @@
   margin-bottom: 4px;
 }
 
+.testimony-title {
+  font-weight: 600;
+}
+
 .testimony-profile-container {
   position: relative;
   top: -23px;

@@ -11,7 +11,7 @@ const TestimonialCard = (props) => {
         <div className="testimonial-card-bottom">
           <div className="tst-crd">
             <p className="testimony-name">{names}</p>
-            <p>{status}</p>
+            <p className="testimony-title">{status}</p>
           </div>
           <div className="testimony-profile-container">
             <img className="testimonial-profile" src={image} alt="" />
