@@ -1,0 +1,66 @@
+:root {
+  --color-secondary: #3882f6;
+}
+
+/* Feature School Card */
+.info-card figcaption {
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+  transition: color ease-in-out 0.15s;
+}
+
+.info-card img {
+  border-radius: 10px;
+  object-fit: none;
+}
+
+.info-card:hover {
+  cursor: pointer;
+}
+
+.info-card:hover img {
+  transform: scale(1.15);
+}
+
+.info-card:hover figcaption {
+  color: var(--color-secondary);
+}
+
+.info-card img,
+.info-card figcaption,
+.img-cont {
+  transition: all ease-in-out 0.3s;
+}
+
+.img-cont {
+  transition: all ease-in-out 0.15s;
+}
+
+.img-cont {
+  border-radius: 14px;
+  border: 3px solid #494545ab;
+  display: flex;
+  height: 300px;
+  max-height: fit-content;
+  overflow: hidden;
+  width: 292px;
+}
+
+.info-card:hover .img-cont {
+  border: 3px solid var(--color-secondary);
+}
+
+/* Feature School Card Container */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  column-gap: 20px;
+}
