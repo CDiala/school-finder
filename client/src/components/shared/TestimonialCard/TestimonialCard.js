@@ -4,20 +4,14 @@ const TestimonialCard = (props) => {
   const { testimony, names, status, image } = props.testament;
   return (
     <>
-      <div className="testimonial-container">
-        {/* <div> */}
-        <p className="testimony">{testimony}</p>
-        {/* </div> */}
-        <div className="testimonial-card-bottom">
-          <div className="tst-crd">
-            <p className="testimony-name">{names}</p>
-            <p className="testimony-title">{status}</p>
-          </div>
-          <div className="testimony-profile-container">
-            <img className="testimonial-profile" src={image} alt="" />
-          </div>
-        </div>
-      </div>
+      <blockquote className="testimonial-container">
+        <q className="testimony">{testimony}</q>
+        <figcaption className="testimonial-card-bottom">
+          <cite className="testimony-name">{names}</cite>
+          <cite className="testimony-title">{status}</cite>
+        </figcaption>
+        <img className="testimony-profile" src={image} alt="" />
+      </blockquote>
     </>
   );
 };

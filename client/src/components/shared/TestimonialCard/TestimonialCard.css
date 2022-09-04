@@ -1,25 +1,26 @@
 .testimonial-container {
   background: #e1e5ff;
-  padding: 24px 31px 22px;
   border-radius: 15px;
   color: #10143b;
   height: 184px;
   max-width: 608px;
+  padding: 20px 30px;
+  position: relative;
 }
 .testimonial-card-bottom {
   color: #10143b;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-}
-
-.testimonial-profile {
-  margin-right: 58px;
+  margin-top: 22px;
 }
 
 .testimony {
-  margin-bottom: 14px;
+  display: block;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 14px;
+  text-align: justify;
 }
 
 .testimony-name {
@@ -27,16 +28,18 @@
   line-height: 24px;
   margin-bottom: 4px;
 }
+.testimony-name,
+.testimony-title {
+  font-style: normal;
+}
 
 .testimony-title {
   font-weight: 600;
 }
 
-.testimony-profile-container {
-  position: relative;
-  top: -23px;
-}
-
-.tst-crd {
-  height: 52px;
+.testimony-profile {
+  bottom: 22px;
+  position: absolute;
+  right: 31px;
+  width: 70px;
 }
