@@ -5,6 +5,11 @@
   display: flex;
   max-width: 884px;
   padding: 24px;
+  transition: all 0.13s ease-in-out;
+}
+
+.xl-card-container:hover {
+  box-shadow: 3px 3px 8px #38260d47;
 }
 
 .xl-card-container:hover .xl-card-img {
@@ -25,6 +30,16 @@
   width: 186px;
 }
 
+.xl-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .xl-card-header {
   margin-bottom: 16px;
+}
+
+.bookmark {
+  align-self: flex-end;
 }
