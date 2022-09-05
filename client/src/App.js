@@ -12,7 +12,7 @@ function App() {
   const objCarousel = [1, 2, 3];
   return (
     <Router>
-      <StyledNumber number={objCarousel[1]} />
+      <StyledNumber number={objCarousel[1]} note={"hi there"} />
     </Router>
   );
 }
