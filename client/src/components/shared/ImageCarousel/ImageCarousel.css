@@ -1,5 +1,5 @@
 .carousel {
-  background-color: rgb(150, 100, 197);
+  padding: 64px 100px;
 }
 
 .carousel-top,
@@ -11,18 +11,15 @@
 
 .carousel-top {
   justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.carousel-note {
+  margin-top: 16px;
 }
 
 .carousel-top-nav {
   column-gap: 24px;
-}
-
-.carousel-bottom-nav {
-  justify-content: center;
-}
-
-.carousel-heading {
-  margin-bottom: 16px;
 }
 
 .carousel-note {
@@ -31,10 +28,38 @@
 }
 
 /*  Carousel bottom */
-.carousel-nav {
-  background-color: rgb(40, 32, 176);
+.carousel-bottom {
+  margin-top: 32px;
+}
+
+.carousel-bottom-nav {
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.carousel-round-nav {
+  background-color: #d8d8d8;
   border-radius: 50%;
   border: 1px solid grey;
   height: 10px;
   width: 10px;
+}
+
+.carousel-round-nav:hover,
+.carousel-left-arrow-nav:hover,
+.carousel-right-arrow-nav:hover {
+  cursor: pointer;
+}
+
+.carousel-round-nav:hover {
+  background-color: rgb(40, 32, 176);
+}
+
+.carousel-left-arrow-nav:hover,
+.carousel-right-arrow-nav:hover {
+  fill: rgb(40, 32, 176);
+}
+
+.carousel-active {
+  background-color: rgb(40, 32, 176);
 }

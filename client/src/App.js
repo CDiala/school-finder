@@ -8,9 +8,18 @@ import { FeatureSchoolList } from "./components/shared/FeatureSchoolCard/Feature
 import ImageCarousel from "./components/shared/ImageCarousel/ImageCarousel";
 
 function App() {
+  const objCarousel = {
+    component: <FeatureSchoolList />,
+    heading: "Articles",
+    note: "I bet you would want to read these articles, selected just for you.",
+  };
   return (
     <Router>
-      <ImageCarousel />
+      <ImageCarousel
+        component={objCarousel["component"]}
+        heading={objCarousel["heading"]}
+        note={objCarousel["note"]}
+      />
     </Router>
   );
 }
