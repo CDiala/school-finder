@@ -5,11 +5,21 @@ import ExtraLargeCard from "./components/shared/ExtraLargeCard/ExtraLargeCard";
 import TestimonialCard from "./components/shared/TestimonialCard/TestimonialCard";
 
 import { FeatureSchoolList } from "./components/shared/FeatureSchoolCard/FeatureSchoolCard";
+import ImageCarousel from "./components/shared/ImageCarousel/ImageCarousel";
 
 function App() {
+  const objCarousel = {
+    component: <FeatureSchoolList />,
+    heading: "Articles",
+    note: "I bet you would want to read these articles, selected just for you.",
+  };
   return (
     <Router>
-      <FeatureSchoolList />
+      <ImageCarousel
+        component={objCarousel["component"]}
+        heading={objCarousel["heading"]}
+        note={objCarousel["note"]}
+      />
     </Router>
   );
 }
