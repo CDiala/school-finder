@@ -1,0 +1,15 @@
+.number-container {
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 80px;
+}
+
+.number {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 62.61px;
+}
