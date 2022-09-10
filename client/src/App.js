@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       {/* <StyledNumber number={objCarousel[1]} note={"hi there"} /> */}
-      <Button text={"Hello"} />
+      <Button text={"Find School"} width={"268"} />
     </Router>
   );
 }

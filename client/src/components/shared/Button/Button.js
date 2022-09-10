@@ -1,7 +1,11 @@
 import "./Button.css";
 
-const Button = ({ text }) => {
-  return <button className="btn btn-small btn-large">{text}</button>;
+const Button = ({ text, width }) => {
+  return (
+    <button className="btn" style={{ maxWidth: `${width}px` }}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;
