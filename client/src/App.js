@@ -7,12 +7,14 @@ import TestimonialCard from "./components/shared/TestimonialCard/TestimonialCard
 import { FeatureSchoolList } from "./components/shared/FeatureSchoolCard/FeatureSchoolCard";
 import ImageCarousel from "./components/shared/ImageCarousel/ImageCarousel";
 import StyledNumber from "./components/shared/StyledNumber/StyledNumber";
+import Button from "./components/shared/Button/Button";
 
 function App() {
   const objCarousel = [1, 2, 3];
   return (
     <Router>
-      <StyledNumber number={objCarousel[1]} note={"hi there"} />
+      {/* <StyledNumber number={objCarousel[1]} note={"hi there"} /> */}
+      <Button text={"Hello"} />
     </Router>
   );
 }
