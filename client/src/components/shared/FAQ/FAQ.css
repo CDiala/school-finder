@@ -1,0 +1,21 @@
+.faq-container {
+  list-style: none;
+  max-width: 800px;
+  padding: 0;
+}
+
+.faq-item {
+  padding: 20px 10px;
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
