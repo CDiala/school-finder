@@ -1,0 +1,66 @@
+.rscard-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.08);
+  max-height: 374px;
+  overflow: hidden;
+  width: 292px;
+}
+
+.rscard-img-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.rscard-container:hover {
+  background-color: #e1e5ff;
+  cursor: pointer;
+}
+
+.rscard-img {
+  display: flex;
+}
+
+.rscard-caption-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.rscard-caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.rscard-container:hover .rscard-arrow-right {
+  fill: #564836;
+}
+
+.rscard-container:hover .rscard-caption {
+  color: #564836;
+}
+
+.rscard-container:hover .rscard-img {
+  transform: scale(1.05);
+}
+
+.rscard-container,
+.rscard-arrow-right,
+.rscard-caption,
+.rscard-img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Components container */
+.rscards-container {
+  align-items: center;
+  column-gap: 24px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 0em;
+  line-height: 24px;
+}

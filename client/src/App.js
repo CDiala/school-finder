@@ -8,13 +8,15 @@ import { FeatureSchoolList } from "./components/shared/FeatureSchoolCard/Feature
 import ImageCarousel from "./components/shared/ImageCarousel/ImageCarousel";
 import StyledNumber from "./components/shared/StyledNumber/StyledNumber";
 import Button from "./components/shared/Button/Button";
+import ResearchSchoolSection from "./components/shared/RSCard/RSCard";
 
 function App() {
   const objCarousel = [1, 2, 3];
   return (
     <Router>
       {/* <StyledNumber number={objCarousel[1]} note={"hi there"} /> */}
-      <Button text={"Find School"} width={"268"} />
+      {/* <Button text={"Find School"} width={"268"} /> */}
+      <ResearchSchoolSection />
     </Router>
   );
 }
