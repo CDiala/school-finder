@@ -50,7 +50,13 @@ const FAQ = () => {
       {faqData.map((item, index) => {
         return (
           <li key={index} className="faq-item">
-            <div className="faq-question-container">
+            <div
+              className="faq-question-container"
+              style={{
+                paddingTop: `${index === 0 ? "0" : null} `,
+                paddingBottom: `${index === faqData.length - 1 ? "0" : null}`,
+              }}
+            >
               <p className="faq-question">{item.question}</p>
               <svg
                 width="16"
@@ -71,7 +77,7 @@ const FAQ = () => {
                 />
               </svg>
             </div>
-            <div className="faq-answer">{item.answer}</div>
+            <div className="faq-answer collapsible__body">{item.answer}</div>
           </li>
         );
       })}
