@@ -7,6 +7,10 @@
   padding: 40px;
 }
 
+.faq-item:hover {
+  cursor: pointer;
+}
+
 .faq-question-container {
   align-items: center;
   display: flex;
@@ -36,4 +40,19 @@
   /* overflow is applied cos max-height doesn't make the ul disappear, it results to an overflow. */
   overflow: hidden;
   transition: all 0.3s;
+}
+
+.collapsible__arrow {
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__arrow {
+  transform: rotate(90deg);
+  /* transition: rotate 3s; */
+}
+
+.collapsible--expanded .collapsible__body {
+  max-height: 100vh;
+  opacity: 1;
 }
