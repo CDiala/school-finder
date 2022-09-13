@@ -45,9 +45,13 @@ const faqData = [
 ];
 
 const showAnswer = (id) => {
-  const arrows = document.querySelectorAll(".collapsible__arrow");
-  const answers = document.querySelectorAll(".faq-answer");
-  console.log(answers);
+  const answers = document.querySelectorAll(".faq-item");
+  answers.forEach((answer, index) => {
+    if (index !== id) {
+      answer.classList.remove("collapsible--expanded");
+    }
+  });
+  answers[id].classList.toggle("collapsible--expanded");
 };
 
 const FAQ = () => {
@@ -60,14 +64,12 @@ const FAQ = () => {
               className="faq-question-container"
               style={{
                 paddingTop: `${index === 0 ? "0" : null} `,
-                paddingBottom: `${index === faqData.length - 1 ? "0" : null}`,
               }}
               onClick={(e) => {
                 let parentID =
                   e.target.id ||
                   e.target.parentElement.id ||
                   e.target.parentElement.parentElement.id;
-                // console.log(parentID);
                 showAnswer(parentID);
               }}
             >
