@@ -1,6 +1,5 @@
 import { trimString } from "../../../utils/formatter";
-// import Bookmark from "../Bookmark/Bookmark";
-// import ReadMore from "../ReadMore/ReadMore";
+
 import "./ExtraLargeCard.css";
 
 const ExtraLargeCard = ({ src, alt, header, body, readMore, bookmark }) => {
@@ -15,13 +14,9 @@ const ExtraLargeCard = ({ src, alt, header, body, readMore, bookmark }) => {
           <p>
             {trimString(body, 350) + " "}
             {readMore}
-            {/* <ReadMore path={"/"} /> */}
           </p>
         </div>
-        <div className="bookmark">
-          {bookmark}
-          {/* <Bookmark /> */}
-        </div>
+        <div className="bookmark">{bookmark}</div>
       </div>
     </div>
   );
