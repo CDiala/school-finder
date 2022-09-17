@@ -9,15 +9,11 @@ const articles = [
   {
     src: src1,
     alt: "article 1",
-    header: "test header 1",
+    header: "Why study Medicine???",
     body: `
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-      You can add webfonts, meta tags, or analytics to this file.
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-      You can add webfonts, meta tags, or analytics to this file.
+    When I was much younger, I had wanted to study medicine, but then when I grew up, I realized I had an abject fear of blood. Lol. Dont laugh at me please. I don’t know hen I was much younger, I had wanted to study medicine, but then when I grew up, I realized I had an abject fear of blood. Lol. Dont laugh at me please. I don’t know
     `,
+    date: "12-09-2022",
   },
   {
     src: src2,
@@ -31,6 +27,7 @@ const articles = [
     To begin the development, run 'npm start' or 'yarn start'.
     To create a production bundle, use 'npm run build' or 'yarn build'.
     `,
+    date: "15-06-2021",
   },
 ];
 
@@ -45,9 +42,8 @@ const ArticleCard = () => {
             alt={article.alt}
             header={article.header}
             body={article.body}
-            readMore={
-              article.body.length >= 300 ? <ReadMore path={"./"} /> : null
-            }
+            charLength={300}
+            readMore={<ReadMore path={"./"} />}
           />
         );
       })}
