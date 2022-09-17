@@ -9,6 +9,8 @@ const ExtraLargeCard = ({
   body,
   charLength,
   readMore,
+  date,
+  dateTime,
   bookmark,
 }) => {
   const isLongText = appendReadMoreLink(trimString(body, charLength));
@@ -25,7 +27,12 @@ const ExtraLargeCard = ({
             {isLongText ? readMore : undefined}
           </p>
         </div>
-        <div className="bookmark">{bookmark}</div>
+        <div className="xl-card-footer">
+          <p>
+            <time dateTime={dateTime}>{date}</time>
+          </p>
+          <div className="bookmark">{bookmark}</div>
+        </div>
       </div>
     </div>
   );
