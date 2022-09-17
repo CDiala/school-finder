@@ -40,6 +40,12 @@
   margin-bottom: 16px;
 }
 
+.xl-card-footer {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+}
+
 .bookmark {
   align-self: flex-end;
 }
