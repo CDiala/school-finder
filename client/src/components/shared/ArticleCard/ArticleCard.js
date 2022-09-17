@@ -2,6 +2,8 @@ import ExtraLargeCard from "../ExtraLargeCard/ExtraLargeCard";
 import "./ArticleCard.css";
 import src1 from "../../../images/graduation.png";
 import src2 from "../../../images/article_img_2.png";
+import Bookmark from "../../../components/shared/Bookmark/Bookmark";
+import ReadMore from "../../../components/shared/ReadMore/ReadMore";
 
 const articles = [
   {
@@ -35,13 +37,17 @@ const articles = [
 const ArticleCard = () => {
   return (
     <div>
-      {articles.map((article) => {
+      {articles.map((article, index) => {
         return (
           <ExtraLargeCard
+            key={index}
             src={article.src}
             alt={article.alt}
             header={article.header}
             body={article.body}
+            readMore={
+              article.body.length >= 300 ? <ReadMore path={"./"} /> : null
+            }
           />
         );
       })}
