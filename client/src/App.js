@@ -4,12 +4,13 @@ import graduation from "./images/graduation.png";
 import ExtraLargeCard from "./components/shared/ExtraLargeCard/ExtraLargeCard";
 import Bookmark from "./components/shared/Bookmark/Bookmark";
 import ReadMore from "./components/shared/ReadMore/ReadMore";
+import { XLCardController } from "./utils/xlCardController";
 
 function App() {
   return (
     <>
       <Router>
-        <ExtraLargeCard
+        {/* <ExtraLargeCard
           src={graduation}
           alt={"template"}
           header="hello header"
@@ -17,7 +18,8 @@ function App() {
           charLength={300}
           readMore={<ReadMore path={"./"} />}
           bookmark={<Bookmark />}
-        />
+        /> */}
+        <XLCardController />
       </Router>
     </>
   );
