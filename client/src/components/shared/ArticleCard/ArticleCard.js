@@ -13,21 +13,18 @@ const articles = [
     body: `
     When I was much younger, I had wanted to study medicine, but then when I grew up, I realized I had an abject fear of blood. Lol. Dont laugh at me please. I don’t know hen I was much younger, I had wanted to study medicine, but then when I grew up, I realized I had an abject fear of blood. Lol. Dont laugh at me please. I don’t know
     `,
-    date: "12-09-2022",
+    date: "September 6, 2021",
+    datetime: "2022-09-06",
   },
   {
     src: src2,
-    alt: "article 2",
+    alt: "I got the scholarship! Yaay!!",
     header: "test header 2",
     body: `
-    The build step will place the bundled scripts into the <body> tag.
-    To begin the development, run 'npm start' or 'yarn start'.
-    To create a production bundle, use 'npm run build' or 'yarn build'.
-    The build step will place the bundled scripts into the <body> tag.
-    To begin the development, run 'npm start' or 'yarn start'.
-    To create a production bundle, use 'npm run build' or 'yarn build'.
+    I guess you would be wondering why I am this excited. Let me give you gist. By the way, I came with ways on how you can easily get that scholarship. Oh yes, I am that nice. Lol. Back to the gist oo, I have
     `,
-    date: "15-06-2021",
+    date: "November 12, 2021",
+    datetime: "2021-11-12",
   },
 ];
 
@@ -36,15 +33,19 @@ const ArticleCard = () => {
     <div>
       {articles.map((article, index) => {
         return (
-          <ExtraLargeCard
-            key={index}
-            src={article.src}
-            alt={article.alt}
-            header={article.header}
-            body={article.body}
-            charLength={300}
-            readMore={<ReadMore path={"./"} />}
-          />
+          <div className="cover">
+            <ExtraLargeCard
+              key={index}
+              src={article.src}
+              alt={article.alt}
+              header={article.header}
+              body={article.body}
+              date={article.date}
+              dateTime={article.datetime}
+              charLength={300}
+              readMore={<ReadMore path={"./"} />}
+            />
+          </div>
         );
       })}
     </div>
