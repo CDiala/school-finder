@@ -16,9 +16,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="header-container">
-          <Header itemsArray={objLinkItems} logo={logo} />
-        </div>
+        <Header itemsArray={objLinkItems} logo={logo} />
         {/* <ArticleCard /> */}
         <Login />
         <Footer itemsArray={objLinkItems} />
