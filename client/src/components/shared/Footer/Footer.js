@@ -25,44 +25,42 @@ const Footer = ({ itemsArray }) => {
               helping them choose a career for themselves.
             </p>
           </div>
-          <nav className="footer-nav">
-            <ul className="nav-links">
-              {itemsArray.map((item, index) => {
-                return (
-                  index < 5 && (
-                    <NavLink
-                      key={index}
-                      itemClass={item.itemClass}
-                      path={item.path}
-                      linkClass={item.linkClass}
-                      imgClass={item.imgClass}
-                      imgSrc={item.imgSrc}
-                      alt={item.alt}
-                      text={item.text}
-                    />
-                  )
-                );
-              })}
-            </ul>
-            <ul className="nav-links">
-              {itemsArray.map((item, index) => {
-                return (
-                  index >= 9 && (
-                    <NavLink
-                      key={index}
-                      itemClass={item.itemClass}
-                      path={item.path}
-                      linkClass={item.linkClass}
-                      imgClass={item.imgClass}
-                      imgSrc={item.imgSrc}
-                      alt={item.alt}
-                      text={item.text}
-                    />
-                  )
-                );
-              })}
-            </ul>
-          </nav>
+          <ul className="footer-nav nav-links">
+            {itemsArray.map((item, index) => {
+              return (
+                index < 5 && (
+                  <NavLink
+                    key={index}
+                    itemClass={item.itemClass}
+                    path={item.path}
+                    linkClass={item.linkClass}
+                    imgClass={item.imgClass}
+                    imgSrc={item.imgSrc}
+                    alt={item.alt}
+                    text={item.text}
+                  />
+                )
+              );
+            })}
+          </ul>
+          <ul className="footer-nav nav-links">
+            {itemsArray.map((item, index) => {
+              return (
+                index >= 9 && (
+                  <NavLink
+                    key={index}
+                    itemClass={item.itemClass}
+                    path={item.path}
+                    linkClass={item.linkClass}
+                    imgClass={item.imgClass}
+                    imgSrc={item.imgSrc}
+                    alt={item.alt}
+                    text={item.text}
+                  />
+                )
+              );
+            })}
+          </ul>
           <div className="newsletter">
             <h3 className="newsletter-title">Newsletter Sign up</h3>
             <p>Signup to get important information via mail</p>
