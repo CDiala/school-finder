@@ -35,11 +35,13 @@
   max-width: 219px;
 }
 
-.footer-nav.nav-links {
+.footer-nav.footer-nav-links {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  list-style: none;
+  padding: 0;
   row-gap: 8px;
 }
 

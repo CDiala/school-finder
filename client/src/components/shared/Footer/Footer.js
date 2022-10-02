@@ -25,7 +25,7 @@ const Footer = ({ itemsArray }) => {
               helping them choose a career for themselves.
             </p>
           </div>
-          <ul className="footer-nav nav-links">
+          <ul className="footer-nav footer-nav-links">
             {itemsArray.map((item, index) => {
               return (
                 index < 5 && (
@@ -43,7 +43,7 @@ const Footer = ({ itemsArray }) => {
               );
             })}
           </ul>
-          <ul className="footer-nav nav-links">
+          <ul className="footer-nav footer-nav-links">
             {itemsArray.map((item, index) => {
               return (
                 index >= 9 && (
