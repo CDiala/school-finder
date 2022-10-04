@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./FAQ.css";
-import { faqData } from "../../../data/faq";
 
-const FAQ = () => {
+const FAQ = ({ faqData }) => {
   const [isActive, setIsActive] = useState(false);
   const [activeID, setActiveID] = useState(false);
 
