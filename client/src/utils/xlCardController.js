@@ -1,4 +1,4 @@
-import { xlCardData } from "../data/cardData";
+import { xlCardData } from "../data/appData";
 import graduation from "../images/graduation.png";
 import ExtraLargeCard from "../components/shared/ExtraLargeCard/ExtraLargeCard";
 import Bookmark from "../components/shared/Bookmark/Bookmark";
