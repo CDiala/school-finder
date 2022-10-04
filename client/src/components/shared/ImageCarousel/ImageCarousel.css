@@ -1,5 +1,7 @@
 .carousel {
-  padding: 64px 100px;
+  margin: auto;
+  max-width: 1240px;
+  padding: 64px 0;
 }
 
 .carousel-top,
