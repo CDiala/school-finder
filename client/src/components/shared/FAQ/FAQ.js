@@ -27,9 +27,6 @@ const FAQ = () => {
               className={`faq-question-container ${
                 index === activeID && isActive ? "collapsible--expanded" : ""
               }`}
-              style={{
-                paddingTop: `${index === 0 ? "0" : null} `,
-              }}
             >
               <p className="faq-question">{item.question}</p>
               <svg
