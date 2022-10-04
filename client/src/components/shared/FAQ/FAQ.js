@@ -1,77 +1,32 @@
+import { useState } from "react";
 import "./FAQ.css";
-
-const faqData = [
-  {
-    question: "What is school finder all about?",
-    answer: `It's a platform that enables you to get 
-        information on different schools that you might be 
-        interested in, without you going to different websites 
-        to search. It gives you all the information you need, 
-        all in one place.`,
-  },
-  {
-    question: "How does the Career Advisory work?",
-    answer: `If you don’t have an idea of what course to study 
-    at the university, you would answer a few questions about 
-    your skills and passion, and what you are good at, and we 
-    would suggest some great courses for you.`,
-  },
-  {
-    question: `Can I save schools and courses that I have an 
-    interest in, to read at a later time?`,
-    answer: `Yes, you can save schools and courses by clicking 
-    the bookmark icon on your item of choice.`,
-  },
-  {
-    question: `How do I access my saved pages?`,
-    answer: `You can access your saved pages from the navigation
-    bar, and from your profile.`,
-  },
-  {
-    question: `How do I check for specific scholarships that I 
-    may be interested in?`,
-    answer: `You could use the search button on any page to search for scholarships and other things you want to search for.`,
-  },
-  {
-    question: `Do I get notifications when new scholarships are posted?`,
-    answer: `You get notifications for scholarships when you sign up 
-    or subscribe to our newsletter.`,
-  },
-  {
-    question: `Can I leave a review?`,
-    answer: `You can leave a review by going to the testimonials section 
-    of the homepage, clicking it and leaving a review.`,
-  },
-];
-
-const showAnswer = (id) => {
-  const answers = document.querySelectorAll(".faq-item");
-  answers.forEach((answer, index) => {
-    if (index !== id) {
-      answer.classList.remove("collapsible--expanded");
-    }
-  });
-  answers[id].classList.toggle("collapsible--expanded");
-};
+import { faqData } from "../../../data/faq";
 
 const FAQ = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [activeID, setActiveID] = useState(false);
+
   return (
     <ul className="faq-container">
       {faqData.map((item, index) => {
         return (
-          <li key={index} id={index} className="faq-item">
+          <li
+            key={index}
+            id={index}
+            className="faq-item"
+            onClick={() => {
+              if (activeID === index) {
+                setIsActive(!isActive);
+              } else {
+                setActiveID(index);
+                setIsActive(true);
+              }
+            }}
+          >
             <div
-              className="faq-question-container"
-              style={{
-                paddingTop: `${index === 0 ? "0" : null} `,
-              }}
-              onClick={(e) => {
-                let parentID =
-                  e.target.id ||
-                  e.target.parentElement.id ||
-                  e.target.parentElement.parentElement.id;
-                showAnswer(parentID);
-              }}
+              className={`faq-question-container ${
+                index === activeID && isActive ? "collapsible--expanded" : ""
+              }`}
             >
               <p className="faq-question">{item.question}</p>
               <svg
@@ -94,7 +49,9 @@ const FAQ = () => {
                 />
               </svg>
             </div>
-            <div className="faq-answer collapsible__body">{item.answer}</div>
+            {index === activeID && isActive && (
+              <div className="faq-answer">{item.answer}</div>
+            )}
           </li>
         );
       })}

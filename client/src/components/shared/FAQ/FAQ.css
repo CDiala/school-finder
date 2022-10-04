@@ -7,6 +7,10 @@
   padding: 40px;
 }
 
+.faq-item {
+  padding: 20px;
+}
+
 .faq-item:hover {
   cursor: pointer;
 }
@@ -15,7 +19,6 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 32px 0 10px;
 }
 
 .faq-question {
@@ -31,16 +34,7 @@
   font-weight: 400;
   line-height: 16px;
   max-width: 750px;
-  padding-left: 20px;
-}
-
-.collapsible__body {
-  /*max-height is used instead of display cos we can't apply transition on display.*/
-  max-height: 0;
-  opacity: 0;
-  /* overflow is applied cos max-height doesn't make the ul disappear, it results to an overflow. */
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 10px 0 0 30px;
 }
 
 .collapsible__arrow {
@@ -50,10 +44,19 @@
 
 .collapsible--expanded .collapsible__arrow {
   transform: rotate(90deg);
-  /* transition: rotate 3s; */
 }
 
-.collapsible--expanded .collapsible__body {
+.faq-answer {
+  /*max-height is used instead of display cos we can't apply transition on display.*/
+  /* max-height: 0; */
+  /* opacity: 0; */
+  /* overflow is applied cos max-height doesn't make the ul disappear, it results to an overflow. */
+  /* overflow: hidden; */
+  /* transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  transition: all 0.3s ease-in-out;
+}
+
+.collapsible--expanded .faq-answer {
   max-height: 100vh;
   opacity: 1;
 }
