@@ -1,9 +1,19 @@
-import { trimString } from "../../../utils/formatter";
-import Bookmark from "../Bookmark/Bookmark";
-import ReadMore from "../ReadMore/ReadMore";
+import { trimString, appendReadMoreLink } from "../../../utils/formatter";
+
 import "./ExtraLargeCard.css";
 
-const ExtraLargeCard = ({ src, alt, header, body }) => {
+const ExtraLargeCard = ({
+  src,
+  alt,
+  header,
+  body,
+  charLength,
+  readMore,
+  date,
+  dateTime,
+  bookmark,
+}) => {
+  const isLongText = appendReadMoreLink(trimString(body, charLength));
   return (
     <div className="xl-card-container">
       <div className="xl-card-img-box">
@@ -13,12 +23,15 @@ const ExtraLargeCard = ({ src, alt, header, body }) => {
         <div className="xl-card-text">
           <h3 className="xl-card-header">{header}</h3>
           <p>
-            {trimString(body, 350) + " "}
-            <ReadMore path={"/"} />
+            {trimString(body, charLength)}
+            {isLongText ? readMore : undefined}
           </p>
         </div>
-        <div className="bookmark">
-          <Bookmark />
+        <div className="xl-card-footer">
+          <p>
+            <time dateTime={dateTime}>{date}</time>
+          </p>
+          <div className="bookmark">{bookmark}</div>
         </div>
       </div>
     </div>
