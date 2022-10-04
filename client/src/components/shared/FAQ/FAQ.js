@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./FAQ.css";
 
 const faqData = [
@@ -44,33 +45,33 @@ const faqData = [
   },
 ];
 
-const showAnswer = (id) => {
-  const answers = document.querySelectorAll(".faq-item");
-  answers.forEach((answer, index) => {
-    if (index !== id) {
-      answer.classList.remove("collapsible--expanded");
-    }
-  });
-  answers[id].classList.toggle("collapsible--expanded");
-};
-
 const FAQ = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [activeID, setActiveID] = useState(false);
+
   return (
     <ul className="faq-container">
       {faqData.map((item, index) => {
         return (
-          <li key={index} id={index} className="faq-item">
+          <li
+            key={index}
+            id={index}
+            className="faq-item"
+            onClick={() => {
+              if (activeID === index) {
+                setIsActive(!isActive);
+              } else {
+                setActiveID(index);
+                setIsActive(true);
+              }
+            }}
+          >
             <div
-              className="faq-question-container"
+              className={`faq-question-container ${
+                index === activeID && isActive ? "collapsible--expanded" : ""
+              }`}
               style={{
                 paddingTop: `${index === 0 ? "0" : null} `,
-              }}
-              onClick={(e) => {
-                let parentID =
-                  e.target.id ||
-                  e.target.parentElement.id ||
-                  e.target.parentElement.parentElement.id;
-                showAnswer(parentID);
               }}
             >
               <p className="faq-question">{item.question}</p>
@@ -94,7 +95,9 @@ const FAQ = () => {
                 />
               </svg>
             </div>
-            <div className="faq-answer collapsible__body">{item.answer}</div>
+            {index === activeID && isActive && (
+              <div className="faq-answer">{item.answer}</div>
+            )}
           </li>
         );
       })}
