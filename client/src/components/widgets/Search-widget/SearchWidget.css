@@ -1,0 +1,12 @@
+.search-widget {
+  background-color: var(--color-plain);
+  border-radius: 10px;
+  /* margin-bottom: 20px; */
+  max-width: 711px;
+  width: 100%;
+}
+
+.search-widget-divider {
+  border: 0;
+  border-bottom: 1px solid var(--color-grey-border);
+}
