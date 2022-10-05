@@ -1,0 +1,23 @@
+#search-tab-box,
+.tab-list {
+  display: flex;
+}
+
+.tab-list {
+  column-gap: 64px;
+  margin-left: 39px;
+}
+
+.search-tab {
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  padding: 24px 0 20px;
+}
+
+.bottom-border {
+  border-bottom-color: var(--color-btn-primary);
+}
+
+.search-title {
+  padding: 24px 23px;
+}
