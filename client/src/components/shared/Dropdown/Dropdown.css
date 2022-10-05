@@ -1,0 +1,26 @@
+.dropdown-group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  max-width: 152px;
+  width: 100%;
+}
+
+.dropdown-group .select-list {
+  border: 0;
+  border-bottom: 1px solid #dcdcdc;
+  color: rebeccapurple;
+  margin: 8px 0 0;
+  width: 100%;
+  outline: none;
+  padding: 2px 8px 2px 0;
+}
+
+.select-list:invalid {
+  color: gray;
+}
+
+.dropdown-label {
+  line-height: 16px;
+  margin-left: 4px;
+}
