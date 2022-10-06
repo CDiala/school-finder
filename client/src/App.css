@@ -1,3 +1,13 @@
 .header-container {
   background-color: var(--color-main);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container Error {
+  justify-items: stretch;
+}

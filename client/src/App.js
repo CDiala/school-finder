@@ -1,19 +1,20 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import SearchWidget from "./components/widgets/Search-widget/SearchWidget";
-// import Header from "./components/shared/Header/Header";
-// import Footer from "./components/shared/Footer/Footer";
-// import { objLinkItems } from "./data/objLinks";
-// import logo from "./images/logo.svg";
-// import { Login } from "./pages/Login/Login";
+import Error from "./pages/Error/Error";
+import { errorData } from "./data/errorData";
+import Header from "./components/shared/Header/Header";
+import Footer from "./components/shared/Footer/Footer";
+import { objLinkItems } from "./data/objLinks";
+import logo from "./images/logo.svg";
 
 function App() {
   return (
     <Router>
-      {/* <Header itemsArray={objLinkItems} logo={logo} />
-      <Login />
-      <Footer itemsArray={objLinkItems} /> */}
-      <SearchWidget />
+      <div className="container">
+        <Header itemsArray={objLinkItems} logo={logo} />
+        <Error objError={errorData[404]} />
+        <Footer itemsArray={objLinkItems} />
+      </div>
     </Router>
   );
 }
