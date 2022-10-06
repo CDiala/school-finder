@@ -1,0 +1,18 @@
+.error-container {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: auto;
+  width: 955px;
+}
+
+.error-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.error-details Button {
+  margin: 0;
+}
