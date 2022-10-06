@@ -10,9 +10,15 @@
 .error-details {
   display: flex;
   flex-direction: column;
+  max-width: 439px;
   row-gap: 24px;
 }
 
 .error-details Button {
   margin: 0;
+}
+
+.error-title {
+  font-size: 56px;
+  line-height: 62.61px;
 }
