@@ -1,5 +1,5 @@
-import err404 from "../images/404.png";
-import err500 from "../images/500.png";
+import err404 from "../images/404.svg";
+import err500 from "../images/500.svg";
 
 export const errorData = {
   404: {
