@@ -48,7 +48,7 @@ export const scholarshipList = [
     title:
       "Pradap Kow Scholarships at National Institute of Education - Singapore, 2021",
     details:
-      "Pradap Kow Scholarships at National Institute of Education - Singapore, 2021",
+      "National Institute of Education – Singapore is awarding the Pradap Kow Scholarships to support exceptional students who are interested in studying a degree program at the Institution. The Pradap Kow Scholarship...Read More",
     img: sch_6,
     alt: "scholarship",
   },
