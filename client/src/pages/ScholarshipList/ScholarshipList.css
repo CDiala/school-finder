@@ -1,0 +1,19 @@
+.search-scholarship-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  max-width: 476px;
+}
+
+.search-icon {
+  margin: 19px 15px;
+}
+
+.scholarship-search {
+  border: none;
+  width: 100%;
+  padding-right: 16px;
+  outline: none;
+  font-size: 16px;
+}
