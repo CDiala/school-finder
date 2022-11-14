@@ -5,7 +5,7 @@ const ScholarshipList = () => {
     <section className="scholarship-container">
       <div className="scholarship-header">
         <div className="scholarship-title">
-          <h2>See Latest Scholarships</h2>
+          <h2 className="scholarship-list-header">See Latest Scholarships</h2>
           <p>Fund your education with exclusive scholarships</p>
         </div>
         <div className="search-scholarship-input">
