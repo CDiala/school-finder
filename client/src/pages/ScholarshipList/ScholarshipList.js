@@ -1,3 +1,5 @@
+import ExtraLargeCardList from "../../components/shared/ExtraLargeCard/ExtraLargeCard";
+import { scholarshipList } from "../../data/scholarship-list";
 import "./ScholarshipList.css";
 
 const ScholarshipList = () => {
@@ -30,7 +32,9 @@ const ScholarshipList = () => {
         </div>
       </div>
       <div className="scholarship-body">
-        <div className="scholarships">{/* render scholarships here */}</div>
+        <div className="scholarships">
+          {<ExtraLargeCardList scholarshipList={scholarshipList} />}
+        </div>
         <aside>{/* render ads & articles here */}</aside>
       </div>
     </section>
