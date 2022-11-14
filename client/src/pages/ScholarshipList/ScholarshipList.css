@@ -1,7 +1,13 @@
+.scholarship-container {
+  margin: 64px auto;
+  width: 1240px;
+}
+
 .scholarship-header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 0 0 32px;
 }
 
 .scholarship-list-header {
