@@ -37,6 +37,10 @@
   position: relative;
 }
 
+.xl-card-text {
+  z-index: 999;
+}
+
 .xl-card-header {
   font-size: 24px;
   font-weight: 400;
