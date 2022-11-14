@@ -25,7 +25,8 @@ const ExtraLargeCard = ({
           <h3 className="xl-card-header">{header}</h3>
           <p>
             {trimString(body, charLength)}
-            {isLongText ? readMore : undefined}
+            {isLongText ? "" : " "}
+            {readMore}
           </p>
         </div>
         <div className="xl-card-footer">
