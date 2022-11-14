@@ -7,7 +7,7 @@ export const trimString = (str, num) => {
   let wordIndex = newStr.lastIndexOf(lastWord);
 
   return str.length > num
-    ? newStr.substring(0, wordIndex).trim() + "..."
+    ? newStr.substring(0, wordIndex).trim() + "... "
     : newStr;
 };
 
