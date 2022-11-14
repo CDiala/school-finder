@@ -49,3 +49,9 @@
 .bookmark {
   align-self: flex-end;
 }
+
+.scholarship-list-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}

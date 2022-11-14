@@ -1,6 +1,7 @@
 import { trimString, appendReadMoreLink } from "../../../utils/formatter";
-
 import "./ExtraLargeCard.css";
+import Bookmark from "../Bookmark/Bookmark";
+import ReadMore from "../ReadMore/ReadMore";
 
 const ExtraLargeCard = ({
   src,
@@ -38,4 +39,26 @@ const ExtraLargeCard = ({
   );
 };
 
-export default ExtraLargeCard;
+const ExtraLargeCardList = ({ scholarshipList }) => {
+  return (
+    <div className="scholarship-list-box">
+      {scholarshipList.map((item, index) => {
+        return (
+          <ExtraLargeCard
+            key={index}
+            src={item.img}
+            header={item.title}
+            charLength={200}
+            bookmark={<Bookmark />}
+            alt={item.alt}
+            readMore={<ReadMore path={item.path} />}
+            body={item.details}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+// export default ExtraLargeCard;
+export default ExtraLargeCardList;
