@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .xl-card-header {
@@ -45,8 +46,12 @@
 
 .xl-card-footer {
   align-items: end;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  right: 0;
+  width: 100%;
 }
 
 .bookmark {
