@@ -4,7 +4,7 @@
 
 .footer-inner-container,
 .footer-inner-container .nav-link a {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .nav-link {
@@ -62,7 +62,7 @@
 /* copyright */
 .copyright-section {
   background-color: var(--color-footer);
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 15px 0;
   text-align: center;
 }

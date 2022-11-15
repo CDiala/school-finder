@@ -18,18 +18,17 @@ export const BannerWrapper = styled.div`
   margin: 0 auto;
   padding-top: 4.5rem;
   .main-content {
-    max-width: 611px;
-
     .banner-text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1rem;
 
       h1 {
         font-style: normal;
         font-weight: 500;
-        font-size: 3.5rem;
+        font-size: 2.7rem;
         line-height: 3.5rem;
+        max-width: 494px;
       }
 
       p {
