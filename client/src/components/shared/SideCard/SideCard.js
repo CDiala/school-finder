@@ -19,7 +19,7 @@ const SideCard = ({ path, src, alt, caption }) => {
 
 const SideCardList = ({ data }) => {
   return (
-    <div className="">
+    <div className="side-card-list-box">
       {data.map((item, index) => {
         return (
           <SideCard
