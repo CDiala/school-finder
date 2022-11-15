@@ -17,4 +17,22 @@ const SideCard = ({ path, src, alt, caption }) => {
   );
 };
 
-export default SideCard;
+const SideCardList = ({ data }) => {
+  return (
+    <div className="">
+      {data.map((item, index) => {
+        return (
+          <SideCard
+            key={index}
+            src={item.src}
+            alt={item.alt}
+            caption={item.header}
+            path={item.path}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default SideCardList;
