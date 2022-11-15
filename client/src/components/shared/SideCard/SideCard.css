@@ -15,9 +15,13 @@ img {
 }
 
 .side-card-img {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.side-card-img img {
+  width: 291px;
 }
 
 .side-card-title {
