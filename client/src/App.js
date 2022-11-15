@@ -1,21 +1,24 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import Error from "./pages/Error/Error";
-import { errorData } from "./data/errorData";
-import Header from "./components/shared/Header/Header";
-import Footer from "./components/shared/Footer/Footer";
-import { objLinkItems } from "./data/objLinks";
-import logo from "./images/logo.svg";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Header from './components/shared/Header/Header';
+import Footer from './components/shared/Footer/Footer';
+import { objLinkItems } from './data/objLinks';
+import logo from './images/logo.svg';
+import LandingPage from './pages/landing_page/LandingPage';
+import { Login } from './pages/Login/Login';
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <Header itemsArray={objLinkItems} logo={logo} />
-        <Error objError={errorData[404]} />
-        <Footer itemsArray={objLinkItems} />
-      </div>
-    </Router>
+    <>
+      <Header itemsArray={objLinkItems} logo={logo} />
+
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/login" element={<Login />} />
+      </Routes>
+
+      <Footer itemsArray={objLinkItems} />
+    </>
   );
 }
 
