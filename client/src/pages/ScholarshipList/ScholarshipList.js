@@ -1,6 +1,6 @@
 import ExtraLargeCardList from "../../components/shared/ExtraLargeCard/ExtraLargeCard";
 import SideCardList from "../../components/shared/SideCard/SideCard";
-import { articles } from "../../data/articlesData";
+import { articles } from "../../data/sideCardData";
 import { scholarshipList } from "../../data/scholarship-list";
 import "./ScholarshipList.css";
 
