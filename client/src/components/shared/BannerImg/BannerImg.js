@@ -1,4 +1,5 @@
 import React from 'react';
+import BannerCard from '../BannerCard/BannerCard';
 import { BannerContianer, BannerWrapper } from './BannerImg.style';
 
 const BannerImg = ({ bgImg, bgGradient, heading, smallText }) => {
@@ -11,6 +12,8 @@ const BannerImg = ({ bgImg, bgGradient, heading, smallText }) => {
             <p>{smallText}</p>
           </div>
         </section>
+
+        <BannerCard />
       </BannerWrapper>
     </BannerContianer>
   );

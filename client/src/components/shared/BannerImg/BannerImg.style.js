@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BannerContianer = styled.div`
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background: ${({ bgGradient }) => bgGradient ?? ''},
     url(${({ bgImg }) => bgImg ?? ''});
   background-repeat: no-repeat;
@@ -17,6 +17,10 @@ export const BannerWrapper = styled.div`
   max-width: 1240px;
   margin: 0 auto;
   padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
   .main-content {
     .banner-text {
       display: flex;
