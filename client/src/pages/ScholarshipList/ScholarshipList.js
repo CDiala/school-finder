@@ -1,4 +1,6 @@
 import ExtraLargeCardList from "../../components/shared/ExtraLargeCard/ExtraLargeCard";
+import SideCardList from "../../components/shared/SideCard/SideCard";
+import { articles } from "../../data/articlesData";
 import { scholarshipList } from "../../data/scholarship-list";
 import "./ScholarshipList.css";
 
@@ -35,7 +37,7 @@ const ScholarshipList = () => {
         <div className="scholarships">
           {<ExtraLargeCardList scholarshipList={scholarshipList} />}
         </div>
-        <aside>{/* render ads & articles here */}</aside>
+        <aside>{<SideCardList data={articles} />}</aside>
       </div>
     </section>
   );
