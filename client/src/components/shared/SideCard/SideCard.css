@@ -33,5 +33,12 @@ img {
 .side-card-list-box {
   display: flex;
   flex-direction: column;
+  padding-top: 23px;
   row-gap: 24px;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
