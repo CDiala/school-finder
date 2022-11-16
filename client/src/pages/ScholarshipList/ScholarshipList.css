@@ -42,3 +42,21 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* ----------------Responsiveness---------------- */
+
+/* -------------Mobile Screen - 320px------------ */
+@media screen and (min-width: 320px) {
+  .scholarship-container {
+    padding: 0 30px;
+    width: 100vw;
+  }
+
+  .scholarship-header {
+    display: block;
+  }
+
+  .search-scholarship-input {
+    margin: 20px 0;
+  }
+}
