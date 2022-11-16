@@ -23,7 +23,7 @@ const ExtraLargeCard = ({
       <div className="xl-card-details">
         <div className="xl-card-text">
           <h3 className="xl-card-header">{header}</h3>
-          <p>
+          <p className="xl-card-body">
             {trimString(body, charLength)}
             {isLongText ? "" : " "}
             {readMore}

@@ -68,3 +68,31 @@
   flex-direction: column;
   row-gap: 32px;
 }
+
+/* ----------------Responsiveness---------------- */
+
+/* -------------Mobile Screen - 320px------------ */
+@media screen and (max-width: 320px) {
+  .xl-card-container {
+    flex-direction: column;
+  }
+
+  .xl-card-img-box {
+    max-width: none;
+  }
+
+  .xl-card-img {
+    flex: 1;
+  }
+
+  .xl-card-body {
+    display: none;
+  }
+
+  .xl-card-header {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 15px 0;
+    text-align: center;
+  }
+}
