@@ -46,7 +46,7 @@
 /* ----------------Responsiveness---------------- */
 
 /* -------------Mobile Screen - 320px------------ */
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .scholarship-container {
     padding: 0 30px;
     width: 100vw;
@@ -58,5 +58,9 @@
 
   .search-scholarship-input {
     margin: 20px 0;
+  }
+
+  .scholarship-body {
+    width: 100%;
   }
 }
