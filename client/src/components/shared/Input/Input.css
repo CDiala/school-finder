@@ -19,3 +19,12 @@
   padding: 0.5rem;
   width: 40px;
 }
+
+/* ----------------Responsiveness---------------- */
+
+/* -------------Mobile Screen - 320px------------ */
+@media screen and (max-width: 320px) {
+  .input-group input {
+    width: 100%;
+  }
+}
