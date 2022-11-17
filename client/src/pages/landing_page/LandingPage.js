@@ -1,8 +1,15 @@
 import React from 'react';
+
 import BannerImg from '../../components/shared/BannerImg/BannerImg';
 import { LandingPageContianer, LandingPageWrapper } from './LandingPage.style';
 import BgImg from '../../images/landing_page_img.svg';
-import { bgGradient, heading, smallText } from './LandingPageServices';
+import {
+  arrowCardList,
+  bgGradient,
+  heading,
+  smallText,
+} from './service/LandingPageServices';
+import CardArrow from '../../components/shared/CardArrow/CardArrow';
 
 // Props to recieve (Found in Landing page services)
 //  --> Bg Img , Gradient , text
@@ -17,6 +24,8 @@ const LandingPage = () => {
           heading={heading}
           smallText={smallText}
         />
+
+        <CardArrow list={arrowCardList} />
       </LandingPageWrapper>
     </LandingPageContianer>
   );
