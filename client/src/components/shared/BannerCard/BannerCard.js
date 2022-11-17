@@ -14,7 +14,10 @@ const BannerCard = () => {
   const handleToggle = (value) => {
     setToggle((prevState) => toggleCard(value));
   };
-  console.log(toggleCard('find'));
+
+  const handleSubmit = (event, type) => {
+    event.preventDefault();
+  };
   return (
     <BannerCardContianer>
       <nav>
@@ -45,7 +48,10 @@ const BannerCard = () => {
       <hr />
 
       {toggle.explore && (
-        <form className="card-option-container">
+        <form
+          className="card-option-container"
+          onSubmit={(e) => handleSubmit(e, 'explore')}
+        >
           <div className="card-wrapper">
             <div className="item-container">
               <div className="item-group">
@@ -92,7 +98,10 @@ const BannerCard = () => {
       )}
 
       {toggle.compare && (
-        <form className="card-option-container">
+        <form
+          className="card-option-container"
+          onSubmit={(e) => handleSubmit(e, 'compare')}
+        >
           <div className="card-wrapper">
             <div className="item-container">
               <div className="item-group">
@@ -121,6 +130,29 @@ const BannerCard = () => {
             </div>
           </div>
           <Button type="submit" width="120" text="Compare" />
+        </form>
+      )}
+
+      {toggle.find && (
+        <form
+          className="card-option-container"
+          onSubmit={(e) => handleSubmit(e, 'find')}
+        >
+          <div className="card-wrapper">
+            <div className="item-container">
+              <div className="item-group">
+                <p>Course</p>
+                <input
+                  type="text"
+                  name="program"
+                  placeHolder="Course of Study"
+                  className="input-field"
+                />
+              </div>
+              <FiChevronDown />
+            </div>
+          </div>
+          <Button type="submit" width="120" text="Scholarship" />
         </form>
       )}
     </BannerCardContianer>

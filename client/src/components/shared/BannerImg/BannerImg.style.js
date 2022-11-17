@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BannerContianer = styled.div`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background: ${({ bgGradient }) => bgGradient ?? ''},
     url(${({ bgImg }) => bgImg ?? ''});
   background-repeat: no-repeat;
@@ -47,6 +47,40 @@ export const BannerWrapper = styled.div`
       h1,
       p {
         color: #ffffff;
+      }
+    }
+  }
+
+  .related-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    p {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+    }
+    .related-link-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .related-link-items {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        li {
+          list-style: none;
+          a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 24px;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.5);
+          }
+        }
       }
     }
   }
