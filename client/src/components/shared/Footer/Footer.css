@@ -97,7 +97,7 @@
 
   .footer-nav.footer-nav-links {
     align-items: center;
-    row-gap: 12px;
+    row-gap: 28px;
   }
 
   .newsletter {
@@ -124,10 +124,15 @@
   .footer-inner-container .nav-link a {
     height: 30px;
     width: 30px;
+    font-size: 20px;
   }
 
   .newsletter-details {
     font-size: 14px;
     margin-bottom: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }
