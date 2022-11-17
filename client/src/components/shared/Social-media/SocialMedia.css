@@ -5,3 +5,12 @@
 .social-media.nav-links a {
   display: flex;
 }
+
+/* ----------------Responsiveness---------------- */
+
+/* -------------Mobile Screen - 320px------------ */
+@media screen and (max-width: 320px) {
+  .social-media.nav-links {
+    justify-content: center;
+  }
+}
