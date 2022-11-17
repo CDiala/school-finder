@@ -77,7 +77,9 @@ const Footer = ({ itemsArray }) => {
       </section>
       <section className="copyright-section">
         <p className="copyright">
-          Copyright &copy; {copyrightDate} SchoolScout. All rights reserved
+          Copyright &copy; {copyrightDate} School Finder. All rights reserved
+          <br />
+          Project inspired by Project "SchoolScout"
         </p>
       </section>
     </footer>
