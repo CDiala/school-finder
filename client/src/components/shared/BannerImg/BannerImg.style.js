@@ -13,7 +13,7 @@ export const BannerContianer = styled.div`
 `;
 
 export const BannerWrapper = styled.div`
-  width: 80%;
+  width: 90%;
   max-width: 1240px;
   margin: 0 auto;
   padding-top: 4.5rem;

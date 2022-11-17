@@ -19,7 +19,8 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  max-width: 1148px;
+  width: 90%;
+  max-width: 1240px;
   padding: 64px 0;
 }
 
