@@ -77,8 +77,8 @@
 
   .footer-inner-container {
     flex-direction: column;
-    row-gap: 30px;
-    font-size: 16px;
+    font-size: 15px;
+    row-gap: 50px;
   }
 
   .footer-col.col-1 {
@@ -88,7 +88,7 @@
 
   .logo {
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .footer-col-body {
@@ -106,6 +106,7 @@
 
   .newsletter-title {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .input-group {
@@ -114,7 +115,7 @@
   }
 
   .social-media.nav-links {
-    margin: 10px auto;
+    margin: 26px auto;
   }
 
   .footer-inner-container {
@@ -124,7 +125,7 @@
   .footer-inner-container .nav-link a {
     height: 30px;
     width: 30px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .newsletter-details {
