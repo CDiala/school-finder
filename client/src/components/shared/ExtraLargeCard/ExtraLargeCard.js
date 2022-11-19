@@ -29,13 +29,9 @@ const ExtraLargeCard = ({
             {readMore}
           </p>
         </div>
-        <div className="xl-card-footer">
-          <p>
-            <time dateTime={dateTime}>{date}</time>
-          </p>
-          <div className="bookmark">{bookmark}</div>
-        </div>
+        <time dateTime={dateTime}>{date}</time>
       </div>
+      <div className="bookmark">{bookmark}</div>
     </div>
   );
 };
