@@ -5,6 +5,7 @@
   display: flex;
   max-width: 884px;
   padding: 24px;
+  position: relative;
   transition: all 0.13s ease-in-out;
 }
 
@@ -60,6 +61,9 @@
 
 .bookmark {
   align-self: flex-end;
+  bottom: 24px;
+  position: absolute;
+  right: 24px;
   z-index: 99999;
 }
 
@@ -96,9 +100,8 @@
     text-align: center;
   }
 
-  .xl-card-container .bookmark-container {
-    position: absolute;
-    top: -289px;
-    right: 0px;
+  .bookmark {
+    left: -20px;
+    top: -20px;
   }
 }
