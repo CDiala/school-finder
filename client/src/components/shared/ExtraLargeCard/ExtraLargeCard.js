@@ -1,6 +1,7 @@
 import { trimString, appendReadMoreLink } from "../../../utils/formatter";
-
 import "./ExtraLargeCard.css";
+import Bookmark from "../Bookmark/Bookmark";
+import ReadMore from "../ReadMore/ReadMore";
 
 const ExtraLargeCard = ({
   src,
@@ -22,20 +23,39 @@ const ExtraLargeCard = ({
       <div className="xl-card-details">
         <div className="xl-card-text">
           <h3 className="xl-card-header">{header}</h3>
-          <p>
+          <p className="xl-card-body">
             {trimString(body, charLength)}
-            {isLongText ? readMore : undefined}
+            {isLongText ? "" : " "}
+            {readMore}
           </p>
         </div>
-        <div className="xl-card-footer">
-          <p>
-            <time dateTime={dateTime}>{date}</time>
-          </p>
-          <div className="bookmark">{bookmark}</div>
-        </div>
+        <time dateTime={dateTime}>{date}</time>
       </div>
+      <div className="bookmark">{bookmark}</div>
     </div>
   );
 };
 
-export default ExtraLargeCard;
+const ExtraLargeCardList = ({ scholarshipList }) => {
+  return (
+    <div className="scholarship-list-box">
+      {scholarshipList.map((item, index) => {
+        return (
+          <ExtraLargeCard
+            key={index}
+            src={item.img}
+            header={item.title}
+            charLength={200}
+            bookmark={<Bookmark />}
+            alt={item.alt}
+            readMore={<ReadMore path={item.path} />}
+            body={item.details}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+// export default ExtraLargeCard;
+export default ExtraLargeCardList;

@@ -19,7 +19,7 @@ const Footer = ({ itemsArray }) => {
             <Link className="logo" to={process.env.PUBLIC_URL + "/"}>
               <img src={logo} alt="website logo" />
             </Link>
-            <p>
+            <p className="footer-col-body">
               School scout seeks to help students make the best educational
               decision by providing them with all relevant information and also
               helping them choose a career for themselves.
@@ -63,7 +63,9 @@ const Footer = ({ itemsArray }) => {
           </ul>
           <div className="newsletter">
             <h3 className="newsletter-title">Newsletter Sign up</h3>
-            <p>Signup to get important information via mail</p>
+            <p className="newsletter-details">
+              Signup to get important information via mail
+            </p>
             <Input
               src={arrow}
               alt="right arrow"
@@ -75,7 +77,9 @@ const Footer = ({ itemsArray }) => {
       </section>
       <section className="copyright-section">
         <p className="copyright">
-          Copyright &copy; {copyrightDate} SchoolScout. All rights reserved
+          Copyright &copy; {copyrightDate} School Finder. All rights reserved
+          <br />
+          Project inspired by Project "SchoolScout"
         </p>
       </section>
     </footer>

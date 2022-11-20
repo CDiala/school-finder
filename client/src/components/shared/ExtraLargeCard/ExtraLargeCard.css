@@ -5,6 +5,7 @@
   display: flex;
   max-width: 884px;
   padding: 24px;
+  position: relative;
   transition: all 0.13s ease-in-out;
 }
 
@@ -34,18 +35,73 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.xl-card-text {
+  z-index: 999;
 }
 
 .xl-card-header {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
   margin-bottom: 16px;
 }
 
 .xl-card-footer {
   align-items: end;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  right: 0;
+  width: 100%;
 }
 
 .bookmark {
   align-self: flex-end;
+  bottom: 24px;
+  position: absolute;
+  right: 24px;
+  z-index: 99999;
+}
+
+.scholarship-list-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+/* ----------------Responsiveness---------------- */
+
+/* -------------Mobile Screen - 320px------------ */
+@media screen and (max-width: 320px) {
+  .xl-card-container {
+    flex-direction: column;
+  }
+
+  .xl-card-img-box {
+    max-width: none;
+  }
+
+  .xl-card-img {
+    flex: 1;
+  }
+
+  .xl-card-body {
+    display: none;
+  }
+
+  .xl-card-header {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .bookmark {
+    left: -20px;
+    top: -20px;
+  }
 }

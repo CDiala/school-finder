@@ -3,6 +3,7 @@
   background-color: #eeefee;
   border-radius: 50%;
   border: 1px solid transparent;
+  cursor: pointer;
   display: flex;
   height: 40px;
   justify-content: center;
